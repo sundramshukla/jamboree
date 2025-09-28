@@ -1,0 +1,73 @@
+/* Desktop header दिखाओ, mobile header छुपाओ */
+.header-mobile{display:none;}
+
+/* Mobile view (<768px) */
+@media (max-width:768px){
+  .header-desktop{display:none;}
+  .header-mobile{display:block;}
+
+  .jamb-header {
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+    padding:10px 15px;
+  }
+  .jamb-header-top {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .jamb-logo img {
+    width:60px;
+    height:auto;
+    display:block;
+  }
+  .jamb-hamburger {
+    font-size:24px;
+    cursor:pointer;
+  }
+  .jamb-menu {
+    display:none;
+    width:100%;
+    margin-top:10px;
+  }
+  .jamb-menu-list {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
+  }
+  .jamb-menu-list li a {
+    text-decoration:none;
+    color:#081126;
+    font-weight:600;
+    padding:8px 10px;
+    display:block;
+    width:100%;
+    text-align:center;
+  }
+  .jamb-menu-list li a:hover,
+  .jamb-menu-list li.active a {
+    background:#ff4b2b;
+    color:#fff;
+  }
+  .jamb-live-dot {
+    width:24px;
+    height:24px;
+    margin-left:4px;
+  }
+  .jamb-btn {
+    display:block;
+    width:100%;
+    background:#ff4b2b;
+    color:#fff;
+    padding:10px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:600;
+    text-align:center;
+    margin-top:10px;
+  }
+}

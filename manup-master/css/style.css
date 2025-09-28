@@ -2726,75 +2726,80 @@ ol {
     }
   }
 
+  
 
 
 
+/* Desktop header दिखाओ, mobile header छुपाओ */
+.header-mobile{display:none;}
 
+/* Mobile view (<768px) */
+@media (max-width:768px){
+  .header-desktop{display:none;}
+  .header-mobile{display:block;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .jamboree-card {
-    margin-bottom: 30px;
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-    background: #fff;
+  .jamb-header {
+    background:#fff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+    padding:10px 15px;
   }
-
-  .jamboree-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+  .jamb-header-top {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
   }
-
-  .jamboree-card img {
-    height: 200px;
-    object-fit: cover;
-    width: 100%;
-    transition: transform 0.4s ease;
+  .jamb-logo img {
+    width:60px;
+    height:auto;
+    display:block;
   }
-
-  .jamboree-card:hover img {
-    transform: scale(1.08);
+  .jamb-hamburger {
+    font-size:24px;
+    cursor:pointer;
   }
-
-  .jamboree-card-body {
-    padding: 20px;
-    text-align: center;
+  .jamb-menu {
+    display:none;
+    width:100%;
+    margin-top:10px;
   }
-
-  .jamboree-card-body h5 {
-    font-size: 1.4rem;
-    margin-bottom: 12px;
-    color: #222;
-    font-weight: 700;
+  .jamb-menu-list {
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
   }
-
-  .highlight {
-    display: inline-block;
-    background: linear-gradient(135deg, #e63946, #ff9a3c);
-    color: #fff;
-    padding: 5px 12px;
-    border-radius: 30px;
-    font-size: 0.85rem;
-    margin: 5px 3px;
+  .jamb-menu-list li a {
+    text-decoration:none;
+    color:#081126;
+    font-weight:600;
+    padding:8px 10px;
+    display:block;
+    width:100%;
+    text-align:center;
   }
+  .jamb-menu-list li a:hover,
+  .jamb-menu-list li.active a {
+    background:#ff4b2b;
+    color:#fff;
+  }
+  .jamb-live-dot {
+    width:24px;
+    height:24px;
+    margin-left:4px;
+  }
+  .jamb-btn {
+    display:block;
+    width:100%;
+    background:#ff4b2b;
+    color:#fff;
+    padding:10px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:600;
+    text-align:center;
+    margin-top:10px;
+  }
+}

@@ -135,30 +135,71 @@
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header class="header-section">
-    <div class="container">
-      <div class="logo">
-        <a href="./index.html">
-          <img src="img/logojamboree.png" alt="Logo">
-        </a>
-      </div>
-      <div class="nav-menu">
-        <nav class="mainmenu">
-          <ul>
-            <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="./about-us.html">About</a></li>
-            <li><a href="./speaker.html">Schedule</a></li>
-            <li><a href="./schedule.html" style="display:inline-flex; align-items:center; line-height:1;">Live Events 
-              <img src="img/livedot.gif" alt="Live" style="width:20px; height:20px;margin-left:4px;">
-            </a></li>
-            <li><a href="./contact.html">Contacts</a></li>
-          </ul>
-        </nav>
-      </div>
-      <a href="./location-tracker.html" class="primary-btn"><i class="fa fa-ticket"></i> Location Tracker</a>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
     </div>
-  </header>
+
+    <!-- Header Section Begin -->
+<header class="header-section header-desktop">
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="img/logojamboree.png" alt="" style="width:70px; height:auto;">
+            </a>
+        </div>
+        <div class="nav-menu">
+            <nav class="mainmenu">
+                <ul>
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./about-us.html">About</a></li>
+                    <li><a href="./about-us.html">Gallery</a></li>
+                    <li><a href="./speaker.html">Schedule</a></li>
+                    <li>
+                      <a href="./schedule.html" style="display:inline-flex; align-items:center; line-height:1;">
+                        Live Events 
+                        <img src="img/livedot.gif" alt="Fun Base" style="width:40px; height:40px;">
+                      </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="./location-tracker.html" class="primary-btn top-btn">
+              <i class="fa fa-ticket"></i> Location Tracker
+            </a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+</header>
+
+<header class="jamb-header header-mobile">
+  <div class="jamb-header-top">
+    <div class="jamb-logo">
+      <a href="./index.html">
+        <img src="img/logojamboree.png" alt="Logo">
+      </a>
+    </div>
+    <div class="jamb-hamburger" id="hamburger">&#9776;</div>
+  </div>
+
+  <nav class="jamb-menu" id="jambMenu">
+    <ul class="jamb-menu-list">
+      <li class="active"><a href="./index.html">Home</a></li>
+      <li><a href="./about-us.html">About</a></li>
+      <li><a href="./about-us.html">Gallery</a></li>
+      <li><a href="./speaker.html">Schedule</a></li>
+      <li>
+        <a href="./schedule.html" class="jamb-live-link">
+          Live Events
+          <img src="img/livedot.gif" alt="Live" class="jamb-live-dot">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <a href="./location-tracker.html" class="jamb-btn">
+    <i class="fa fa-ticket"></i> Location Tracker
+  </a>
+</header>
 
   <!-- Cards Section -->
   <div class="cards-wrapper">
@@ -199,4 +240,15 @@
   </div>
 
 </body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('jambMenu');
+
+  hamburger.addEventListener('click', function(){
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+  });
+});
+</script>
 </html>

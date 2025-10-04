@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Jamboree Gallery">
+  <meta name="keywords" content="Jamboree, Gallery, Photos, Videos">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jamboree | Gallery</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+
+  <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+</head>
+
+<body>
+
+
+  <!-- Header Section Desktop -->
+  <header class="header-section header-desktop">
+    <div class="container">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="img/logojamboree.png" alt="Jamboree Logo" style="width:70px; height:auto;">
+        </a>
+      </div>
+      <div class="nav-menu">
+        <nav class="mainmenu">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about-us.html">About</a></li>
+            <li class="active"><a href="./gallery.html">Gallery</a></li>
+            <li><a href="./speaker.html">Schedule</a></li>
+            <li>
+              <a href="./schedule.html" style="display:inline-flex; align-items:center; line-height:1;">
+                Live Events
+                <img src="img/livedot.gif" alt="Live" style="width:40px; height:40px;">
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <a href="./location-tracker.html" class="primary-btn top-btn">
+          <i class="fa fa-ticket"></i> Location Tracker
+        </a>
+      </div>
+      <div id="mobile-menu-wrap"></div>
+    </div>
+  </header>
+
+  <!-- Header Section Mobile -->
+  <header class="jamb-header header-mobile">
+    <div class="jamb-header-top">
+      <div class="jamb-logo">
+        <a href="./index.html">
+          <img src="img/logojamboree.png" alt="Logo">
+        </a>
+      </div>
+      <div class="jamb-hamburger" id="hamburger">&#9776;</div>
+    </div>
+
+    <nav class="jamb-menu" id="jambMenu">
+      <ul class="jamb-menu-list">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about-us.html">About</a></li>
+        <li class="active"><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./speaker.html">Schedule</a></li>
+        <li>
+          <a href="./schedule.html" class="jamb-live-link">
+            Live Events
+            <img src="img/livedot.gif" alt="Live" class="jamb-live-dot">
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <a href="./location-tracker.html" class="jamb-btn">
+      <i class="fa fa-ticket"></i> Location Tracker
+    </a>
+  </header>
+
+<!-- Gallery Section -->
+<div class="gallery-container">
+  <h1>Our Gallery</h1>
+  <div class="gallery-grid">
+
+    <!-- Card 1 -->
+    <a href="https://drive.google.com/drive/folders/YOUR_DRIVE_FOLDER_ID1" target="_blank" class="gallery-card">
+      <img src="img/area1-thumbnail.jpg" alt="Area 1">
+      <div class="gallery-content">
+        <div class="gallery-title">Area 1 – Photos</div>
+        <span class="gallery-btn">View on Drive</span>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="https://drive.google.com/drive/folders/YOUR_DRIVE_FOLDER_ID2" target="_blank" class="gallery-card">
+      <img src="img/area2-thumbnail.jpg" alt="Area 2">
+      <div class="gallery-content">
+        <div class="gallery-title">Area 2 – Videos</div>
+        <span class="gallery-btn">View on Drive</span>
+      </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="https://drive.google.com/drive/folders/YOUR_DRIVE_FOLDER_ID3" target="_blank" class="gallery-card">
+      <img src="img/area3-thumbnail.jpg" alt="Area 3">
+      <div class="gallery-content">
+        <div class="gallery-title">Area 3 – Mixed</div>
+        <span class="gallery-btn">View on Drive</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+  <!-- Mobile menu toggle script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const hamburger = document.getElementById('hamburger');
+      const menu = document.getElementById('jambMenu');
+      hamburger.addEventListener('click', function(){
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>

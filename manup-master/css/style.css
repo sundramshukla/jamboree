@@ -2803,3 +2803,143 @@ ol {
     margin-top:10px;
   }
 }
+
+
+
+
+@media (min-width:992px){
+  .schedule-tab .nav-tabs{
+    flex-wrap:nowrap !important;
+  }
+}
+
+
+
+
+
+
+
+.jamb-carousel {
+  background:#f2f6fa;          /* पूरे container का background */
+  padding:30px 0;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.slide-row {
+  display:flex;
+  gap:20px;
+  align-items:stretch;
+}
+
+/* तुम्हारी custom % widths */
+.slide-image {
+  flex:0 0 40%; /* left box width % */
+}
+.slide-content {
+  flex:0 0 60%; /* right box width % */
+}
+
+/* image */
+.slide-image img {
+  width:100%;
+  height:400px;
+  object-fit:contain; /* crop नहीं होगा */
+  background:#f2f6fa; /* match bg */
+}
+
+/* content */
+.slide-content {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  height:400px; /* image के बराबर */
+  padding:20px;
+}
+.slide-content h2 {
+  font-size:28px;
+  margin-bottom:10px;
+}
+.person-name {
+  font-size:20px;
+  font-weight:600;
+  margin-bottom:15px;
+  color:#081126;
+}
+.slide-content p {
+  font-size:16px;
+  line-height:1.5;
+  margin-bottom:0;
+}
+
+.highlight-red {color:#e63946;}
+.highlight-green {color:#2a9d8f;}
+.highlight-orange {color:#f4a261;}
+
+/* mobile view */
+@media (max-width:768px){
+  .slide-row {
+    flex-direction:column;
+  }
+  .slide-image,
+  .slide-content {
+    flex:1 1 100%;
+  }
+  .slide-image img {
+    height:220px;
+  }
+  .slide-content {
+    height:auto;
+    text-align:center;
+    padding:15px;
+  }
+  .slide-content h2 {
+    font-size:20px;
+  }
+  .person-name {
+    font-size:16px;
+    margin-bottom:10px;
+  }
+  .slide-content p {
+    font-size:14px;
+  }
+}
+
+
+/* सिर्फ़ carousel slider की images */
+.jamb-carousel .slide-image img {
+  width:100%;
+  height:400px;
+  object-fit:contain;          /* crop नहीं होगा */
+  background:#f2f6fa;
+
+  /* stylish border/shadow */
+  border-radius:20px;          /* rounded corners */
+  border:4px solid #ffffff;    /* white border */
+  box-shadow:0 10px 25px rgba(0,0,0,0.15); /* soft shadow */
+}
+
+/* अगर gradient border चाहिए */
+.jamb-carousel .slide-image {
+  background:linear-gradient(45deg,#ff4b2b,#2a9d8f,#f4a261); /* gradient frame */
+  padding:4px;                 /* frame space */
+  border-radius:22px;          /* match inner img radius+padding */
+}
+
+.jamb-carousel .slide-image img {
+  border-radius:18px;          /* inner image radius */
+  background:#fff;             /* inner bg */
+}
+
+/* mobile view */
+@media (max-width:768px){
+  .jamb-carousel .slide-image img {
+    height:220px;
+    border-radius:15px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.12);
+  }
+  .jamb-carousel .slide-image {
+    padding:3px;
+    border-radius:17px;
+  }
+}

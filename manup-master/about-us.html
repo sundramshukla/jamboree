@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/about.css" type="text/css">
 </head>
 
 <body>
@@ -31,33 +32,68 @@
     </div>
 
     <!-- Header Section Begin -->
-    <header class="header-section">
-        <div class="container">
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="img/logojamboree.png" alt="" style="width:70px; height:auto;">
-                </a>
-            </div>
-            <div class="nav-menu">
-                <nav class="mainmenu mobile-menu">
-                    <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
-                        <li><a href="./about-us.html">About</a></li>
-                        <li><a href="./speaker.html">Schedule</a>
-                        </li>
-                        <li><a href="./schedule.html" style="display:inline-flex; align-items:center; line-height:1;">Live Events <img src="img/livedot.gif" alt="Fun Base" style="width:40px; height:40px;"></a></li>
-                        <li><a href="./contact.html">Contacts</a></li>
-                    </ul>
-                </nav>
-                <a href="./location-tracker.html" class="primary-btn top-btn"><i class="fa fa-ticket"></i> Location Tracker</a>
-            </div>
-            <div id="mobile-menu-wrap"></div>
+<header class="header-section header-desktop">
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="img/logojamboree.png" alt="" style="width:70px; height:auto;">
+            </a>
         </div>
-    </header>
+        <div class="nav-menu">
+            <nav class="mainmenu">
+                <ul>
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./about-us.html">About</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./speaker.html">Schedule</a></li>
+                    <li>
+                      <a href="./schedule.html" style="display:inline-flex; align-items:center; line-height:1;">
+                        Live Events 
+                        <img src="img/livedot.gif" alt="Fun Base" style="width:40px; height:40px;">
+                      </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="./location-tracker.html" class="primary-btn top-btn">
+              <i class="fa fa-ticket"></i> Location Tracker
+            </a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+</header>
 
-    <!-- Header End -->
+<header class="jamb-header header-mobile">
+  <div class="jamb-header-top">
+    <div class="jamb-logo">
+      <a href="./index.html">
+        <img src="img/logojamboree.png" alt="Logo">
+      </a>
+    </div>
+    <div class="jamb-hamburger" id="hamburger">&#9776;</div>
+  </div>
 
-    <!-- Breadcrumb Section Begin -->
+  <nav class="jamb-menu" id="jambMenu">
+    <ul class="jamb-menu-list">
+      <li class="active"><a href="./index.html">Home</a></li>
+      <li><a href="./about-us.html">About</a></li>
+      <li><a href="./about-us.html">Gallery</a></li>
+      <li><a href="./speaker.html">Schedule</a></li>
+      <li>
+        <a href="./schedule.html" class="jamb-live-link">
+          Live Events
+          <img src="img/livedot.gif" alt="Live" class="jamb-live-dot">
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <a href="./location-tracker.html" class="jamb-btn">
+    <i class="fa fa-ticket"></i> Location Tracker
+  </a>
+</header>
+
+
+<!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-section">
         <div class="container">
             <div class="row">
@@ -269,243 +305,242 @@
 <br/>
 <br/>
 
-<style>
+<section class="about-us-history">
+  <div class="container">
+    <h2 class="about-us-heading">National Jamboree History</h2>
+    <div class="row">
 
-</style>
-
-<div class="container">
-  <div class="row">
-
-    <!-- 1st Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="1st National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>1st National Jamboree</h5>
-          <span class="highlight">1953</span>
-          <span class="highlight">Secunderabad, Andhra Pradesh</span>
+      <!-- 1st Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="1st National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">1st National Jamboree</h5>
+            <span class="about-us-year">1953</span>
+            <span class="about-us-place">Secunderabad, Andhra Pradesh</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 2nd Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="2nd National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>2nd National Jamboree</h5>
-          <span class="highlight">1956</span>
-          <span class="highlight">Jaipur, Rajasthan</span>
+      <!-- 2nd Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="2nd National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">2nd National Jamboree</h5>
+            <span class="about-us-year">1956</span>
+            <span class="about-us-place">Jaipur, Rajasthan</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 3rd Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="3rd National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>3rd National Jamboree</h5>
-          <span class="highlight">1960-61</span>
-          <span class="highlight">Bangalore, Karnataka</span>
+      <!-- 3rd Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="3rd National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">3rd National Jamboree</h5>
+            <span class="about-us-year">1960–61</span>
+            <span class="about-us-place">Bangalore, Karnataka</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 4th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="4th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>4th National Jamboree</h5>
-          <span class="highlight">1964</span>
-          <span class="highlight">Allahabad, Uttar Pradesh</span>
+      <!-- 4th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="4th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">4th National Jamboree</h5>
+            <span class="about-us-year">1964</span>
+            <span class="about-us-place">Allahabad, Uttar Pradesh</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 5th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="5th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>5th National Jamboree</h5>
-          <span class="highlight">1967</span>
-          <span class="highlight">Kalyani, West Bengal</span>
+      <!-- 5th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="5th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">5th National Jamboree</h5>
+            <span class="about-us-year">1967</span>
+            <span class="about-us-place">Kalyani, West Bengal</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 6th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="6th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>6th National Jamboree</h5>
-          <span class="highlight">1970</span>
-          <span class="highlight">Aarey Colony, Bombay</span>
+      <!-- 6th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="6th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">6th National Jamboree</h5>
+            <span class="about-us-year">1970</span>
+            <span class="about-us-place">Aarey Colony, Bombay</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 7th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="7th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>7th National Jamboree</h5>
-          <span class="highlight">1974</span>
-          <span class="highlight">Faridabad, Haryana</span>
+      <!-- 7th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="7th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">7th National Jamboree</h5>
+            <span class="about-us-year">1974</span>
+            <span class="about-us-place">Faridabad, Haryana</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 8th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="8th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>8th National Jamboree</h5>
-          <span class="highlight">1979</span>
-          <span class="highlight">Maraimalai Nagar, Tamil Nadu</span>
+      <!-- 8th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="8th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">8th National Jamboree</h5>
+            <span class="about-us-year">1979</span>
+            <span class="about-us-place">Maraimalai Nagar, Tamil Nadu</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 9th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="9th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>9th National Jamboree</h5>
-          <span class="highlight">1982</span>
-          <span class="highlight">Bodh Gaya, Bihar</span>
+      <!-- 9th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="9th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">9th National Jamboree</h5>
+            <span class="about-us-year">1982</span>
+            <span class="about-us-place">Bodh Gaya, Bihar</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 10th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="10th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>10th National Jamboree</h5>
-          <span class="highlight">1986</span>
-          <span class="highlight">Bangalore, Karnataka</span>
+      <!-- 10th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="10th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">10th National Jamboree</h5>
+            <span class="about-us-year">1986</span>
+            <span class="about-us-place">Bangalore, Karnataka</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 11th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="11th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>11th National Jamboree</h5>
-          <span class="highlight">1990</span>
-          <span class="highlight">Bhopal, Madhya Pradesh</span>
+      <!-- 11th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="11th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">11th National Jamboree</h5>
+            <span class="about-us-year">1990</span>
+            <span class="about-us-place">Bhopal, Madhya Pradesh</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 12th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="12th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>12th National Jamboree</h5>
-          <span class="highlight">1994</span>
-          <span class="highlight">Palghat, Kerala</span>
+      <!-- 12th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="12th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">12th National Jamboree</h5>
+            <span class="about-us-year">1994</span>
+            <span class="about-us-place">Palghat, Kerala</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 13th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="13th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>13th National Jamboree</h5>
-          <span class="highlight">1998</span>
-          <span class="highlight">Khurda, Odisha</span>
+      <!-- 13th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="13th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">13th National Jamboree</h5>
+            <span class="about-us-year">1998</span>
+            <span class="about-us-place">Khurda, Odisha</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 14th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="14th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>14th National Jamboree</h5>
-          <span class="highlight">2002</span>
-          <span class="highlight">Raipur, Chhattisgarh</span>
+      <!-- 14th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="14th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">14th National Jamboree</h5>
+            <span class="about-us-year">2002</span>
+            <span class="about-us-place">Raipur, Chhattisgarh</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 15th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="15th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>15th National Jamboree</h5>
-          <span class="highlight">2005</span>
-          <span class="highlight">Haridwar, Uttarakhand</span>
+      <!-- 15th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="15th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">15th National Jamboree</h5>
+            <span class="about-us-year">2005</span>
+            <span class="about-us-place">Haridwar, Uttarakhand</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 16th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="16th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>16th National Jamboree</h5>
-          <span class="highlight">2011</span>
-          <span class="highlight">Hyderabad, Andhra Pradesh</span>
+      <!-- 16th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="16th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">16th National Jamboree</h5>
+            <span class="about-us-year">2011</span>
+            <span class="about-us-place">Hyderabad, Andhra Pradesh</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 17th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="17th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>17th National Jamboree</h5>
-          <span class="highlight">—</span>
-          <span class="highlight">Data Not Found</span>
+      <!-- 17th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="17th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">17th National Jamboree</h5>
+            <span class="about-us-year">—</span>
+            <span class="about-us-place">Data Not Found</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 18th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="18th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>18th National Jamboree</h5>
-          <span class="highlight">2023</span>
-          <span class="highlight">Pali, Rajasthan</span>
+      <!-- 18th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="18th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">18th National Jamboree</h5>
+            <span class="about-us-year">2023</span>
+            <span class="about-us-place">Pali, Rajasthan</span>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- 19th Jamboree -->
-    <div class="col-md-6 col-lg-4">
-      <div class="card jamboree-card">
-        <img src="img/jamb.jpg" alt="19th National Jamboree">
-        <div class="card-body jamboree-card-body">
-          <h5>19th National Jamboree</h5>
-          <span class="highlight">2025</span>
-          <span class="highlight">Lucknow, Uttar Pradesh</span>
+      <!-- 19th Jamboree -->
+      <div class="col-md-6 col-lg-4">
+        <div class="about-us-card">
+          <img src="img/jamb.jpg" alt="19th National Jamboree" class="about-us-img">
+          <div class="about-us-body">
+            <h5 class="about-us-title">19th National Jamboree</h5>
+            <span class="about-us-year">2025</span>
+            <span class="about-us-place">Lucknow, Uttar Pradesh</span>
+          </div>
         </div>
       </div>
-    </div>
 
+    </div>
   </div>
-</div>
+</section>
 
     <!-- Pricing Section Begin -->
     <section class="pricing-section set-bg spad" data-setbg="img/pricing-bg.jpg">
@@ -782,5 +817,14 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('jambMenu');
 
+  hamburger.addEventListener('click', function(){
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+  });
+});
+</script>
 </html>

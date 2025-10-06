@@ -74,12 +74,12 @@
 
   <nav class="jamb-menu" id="jambMenu">
     <ul class="jamb-menu-list">
-      <li class="active"><a href="./index.html">Home</a></li>
+      <li ><a href="./index.html">Home</a></li>
       <li><a href="./about-us.html">About</a></li>
       <li><a href="./gallery.html">Gallery</a></li>
-      <li><a href="./speaker.html">Schedule</a></li>
+      <li class="active"><a href="./schedule.html">Schedule</a></li>
       <li>
-        <a href="./schedule.html" class="jamb-live-link">
+        <a href="./live-events.html" class="jamb-live-link">
           Live Events
           <img src="img/livedot.gif" alt="Live" class="jamb-live-dot">
         </a>
@@ -779,6 +779,17 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+  <!-- Mobile menu toggle script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      const hamburger = document.getElementById('hamburger');
+      const menu = document.getElementById('jambMenu');
+      hamburger.addEventListener('click', function(){
+        menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+  </script>
 </body>
 
 </html>
